@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Needs !-->
+	<meta charset="utf-8">
+	<title>MBHS SGA</title>
+	<meta name="description" content="">	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<!-- CSS !-->
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+</head>
+<body>
+
+    <div id="page">
+        <!-- Begin Navbar !-->
+        <div id="headercontainer" class="unselectable">
+            <div id="headerfull">
+				<div id="headerleft" class="titleleft">
+					<span style="font-size: 28pt; font-weight: bold;">Montgomery Blair SGA</span>
+					<br><span style="font-size: 16pt;"><a href="https://twitter.com/Blair_SGA"target="_Blank"x>@Blair_SGA</a></span>
+				</div>
+                <div id="headerright" class="navlinks">
+					<ul>
+                    <li><a href="home.html">Home</a></li>
+					<li><a href="aboutus.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+					<li><a href="clubs.html">Clubs</a></li>
+					<li><a href="blairwear.html">Blairwear</a></li>
+                    <li><a href="Meetings.html">Monthly Meetings</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
+					</ul>
+                </div>
+				
+            </div>
+  		</div>
+        <!-- End Navbar !-->
+        <!-- Begin Docs Table !-->
+		<div id="box">EVENTS</div> <!--UPDATE EVENTS LIST!-->
+            <div id="events">
+				<div id="fallpep" class="evsel">
+					<div onmouseover="select(this)" class="namedec">Fall Spirit Week / Spirit Celebration</div>
+					<div class="evcont">
+						<div class="evimg"><img src="images/events/pepf.jpg"></div>
+						<p>Students are encouraged to show their school spirit by following spirit day dress themes, competing for their respective grades. It cumulates into a school-wide pep rally, celebrating the spirit of the school amidst Homecoming Week.</p>
+					</div>
+				</div>
+				<div id="homecoming" class="evsel">
+					<div onmouseover="select(this)" class="namedec">Homecoming</div>
+					<div class="evcont">
+						<div class="evimg"><img src="images/events/hoco.jpg"></div>
+						<p>Montgomery Blair High School’s annual event:  a dance in the gymnasium, featuring a DJ, music, snacks, decoration, and lighting. A Homecoming Court consisting of all grades are announced at this event.</p>
+					</div>
+				</div>
+                       
+                        <!--Add Blaireoke???!-->
+                        
+				<div id="food" class="evsel">
+					<div onmouseover="select(this)" class="namedec">Food Drive</div>
+					<div class="evcont">
+						<div class="evimg"><img src="images/events/mana.png"></div>
+						<p>The SGA collaborates with Manna Food Center to collect non perishables and canned foods that will be distributed in the Montgomery County area in time for the holiday season.</p>
+					</div>
+				</div>
+                         
+                <div id="fallblood" class="evsel">
+					<div onmouseover="select(this)" class="namedec">Blood Drive</div>
+					<div class="evcont">
+						<div class="evimg"><img src="images/events/blood.jpg"></div>
+						<p>In coordination with INOVA, the SGA organizes a blood drive in the Fall and in the Spring. We give students the opportunity to donate blood in the gymnasium.</p>
+				    </div>
+				</div>
+                        
+                        <!--Holiday Hope Week!-->
+                        <!--Coat Drive!-->
+                        <!--Pennies for Patients!-->
+                
+                        
+				<div id="mental" class="evsel">
+					<div onmouseover="select(this)" class="namedec">Mental Health Awareness Week</div>
+					<div class="evcont">
+						<div class="evimg"><img src="images/events/mental.png"></div>
+						<p>Collaborating with NAMI (National Alliance of Mental Illness), SGA dedicates a week to informing students about mental health through an open mic, advertising tables, and public speakers in Health and Psychology classes.</p>
+					</div>
+					</div>
+				
+					
+				
+				
+				<div id="international" class="evsel">
+					<div onmouseover="select(this)" class="namedec">International Night</div>
+					<div class="evcont">
+						<div class="evimg"><img src="images/events/international.png"></div>
+						<p>The SGA works with the PTA to plan a night of festivities where Blazers of all different backgrounds can come and embrace their cultures. Families are encouraged to bring foods from their countries, followed by a series of performances from various students and clubs. </p>
+					</div>
+				</div>
+                        
+                        <!--Spring Spirit Week/Spirit Celebration!-->
+				
+				<div id="smob" class="evsel">
+					<div onmouseover="select(this)" class="namedec">SMOB / Class Elections</div>
+					<div class="evcont">
+						<div class="evimg"><img src="images/events/smob.png"></div>
+						<p>Blazers practice their right to vote for the Student Member of the Board as well as their Class President and Vice President for the upcoming school year. </p>
+					</div>
+				</div>
+			</div>
+        <!-- End Docs Table !-->
+        <!-- Comment the search box -->
+        <!--<gcse:searchresults></gcse:searchresults>-->
+        <div id="push"></div>
+		<br>
+		<br>
+		
+    <div id="footer">
+			&copy Montgomery Blair High School | Designed and Created by: <a href="credits.html">The Blair SGA Web Team</a>	</div>
+	</div>
+<!-- Scripts -->
+	<script>
+			function select(x){
+				var y = document.getElementsByClassName("evcont");
+				for(var c = 0; c < y.length; c++){
+					y[c].style.visibility = "hidden";
+				}
+				var y = document.getElementsByClassName("namedec");
+				for(var c = 0; c < y.length; c++){
+					y[c].style.backgroundColor= "#ffffff";
+					y[c].style.color= "#d54542";
+				}
+				var g = x.parentElement.getElementsByClassName("evcont");
+				for(var c = 0; c < g.length; c++){
+					g[c].style.visibility = "visible";
+				}
+				x.style.backgroundColor = "#d54542";
+				x.style.color= "#ffffff";
+			}
+	</script>
+</body>
+</html>
