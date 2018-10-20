@@ -81,7 +81,7 @@ ul li a{
 }
 .form-contact{
     height: 32px !important;
-    width: 32px !importnat;
+    width: 32px !important;
 }
 
 .table-striped > tbody > tr:nth-child(2n) > td a, .table-striped > tbody > tr:nth-child(2n) > th a{
@@ -638,7 +638,7 @@ border-bottom: 1px solid;
 .column-left{ 
     float: left;
     width: 32%;
-    text-align: center;4
+    text-align: center;
 }
 .column-right{ 
     float: right;
